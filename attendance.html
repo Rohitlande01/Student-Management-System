@@ -1,5 +1,107 @@
-<h1>
-  attendance.html
-</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendance</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
 
-<a href="attendance.html"> attendance </a>
+<body class="bg-gray-100">
+
+  <nav class="bg-blue-700 text-white shadow-lg">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Student Management</h1>
+
+      <div class="space-x-6">
+        <a href="index.html" class="hover:text-yellow-300">Home</a>
+        <a href="students.html" class="hover:text-yellow-300">Students</a>
+        <a href="marks.html" class="hover:text-yellow-300">Marks</a>
+        <a href="attendance.html" class="hover:text-yellow-300 font-semibold">Attendance</a>
+        <a href="about.html" class="hover:text-yellow-300">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-7xl mx-auto px-6 py-10">
+
+    <h2 class="text-3xl font-bold mb-6">Student Attendance</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+
+      <div class="bg-white p-6 rounded-xl shadow-md">
+        <h3 class="text-gray-500">Total Students</h3>
+        <p class="text-3xl font-bold mt-2">120</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow-md">
+        <h3 class="text-gray-500">Present Today</h3>
+        <p class="text-3xl font-bold text-green-600 mt-2">108</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow-md">
+        <h3 class="text-gray-500">Absent Today</h3>
+        <p class="text-3xl font-bold text-red-600 mt-2">12</p>
+      </div>
+
+    </div>
+
+    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+
+      <table class="w-full text-left">
+        <thead class="bg-orange-500 text-white">
+          <tr>
+            <th class="px-6 py-4">ID</th>
+            <th class="px-6 py-4">Student Name</th>
+            <th class="px-6 py-4">Class</th>
+            <th class="px-6 py-4">Attendance</th>
+            <th class="px-6 py-4">Status</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr class="border-b">
+            <td class="px-6 py-4">101</td>
+            <td class="px-6 py-4 font-semibold">Rahul Sharma</td>
+            <td class="px-6 py-4">10-A</td>
+            <td class="px-6 py-4">92%</td>
+            <td class="px-6 py-4">
+              <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full">
+                Present
+              </span>
+            </td>
+          </tr>
+
+          <tr class="border-b">
+            <td class="px-6 py-4">102</td>
+            <td class="px-6 py-4 font-semibold">Priya Patil</td>
+            <td class="px-6 py-4">10-B</td>
+            <td class="px-6 py-4">96%</td>
+            <td class="px-6 py-4">
+              <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full">
+                Present
+              </span>
+            </td>
+          </tr>
+
+          <tr class="border-b">
+            <td class="px-6 py-4">103</td>
+            <td class="px-6 py-4 font-semibold">Amit Verma</td>
+            <td class="px-6 py-4">10-A</td>
+            <td class="px-6 py-4">74%</td>
+            <td class="px-6 py-4">
+              <span class="bg-red-100 text-red-700 px-3 py-1 rounded-full">
+                Absent
+              </span>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+
+    </div>
+  </main>
+
+</body>
+</html>
