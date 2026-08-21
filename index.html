@@ -1,4 +1,76 @@
-<h1>
-  Student Management System Project 
-</h1>
-<a href="index.html">Home</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Management System - Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-blue-700 text-white shadow-lg">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Student Management</h1>
+
+      <div class="space-x-6">
+        <a href="index.html" class="hover:text-yellow-300 font-semibold">Home</a>
+        <a href="students.html" class="hover:text-yellow-300">Students</a>
+        <a href="marks.html" class="hover:text-yellow-300">Marks</a>
+        <a href="attendance.html" class="hover:text-yellow-300">Attendance</a>
+        <a href="about.html" class="hover:text-yellow-300">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="bg-blue-600 text-white py-20">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-5xl font-bold mb-6">
+        Student Management System
+      </h2>
+
+      <p class="text-xl mb-8">
+        Manage students, marks and attendance easily in one place.
+      </p>
+
+      <a href="students.html"
+         class="bg-white text-blue-700 px-6 py-3 rounded-lg font-bold hover:bg-gray-200">
+        View Students
+      </a>
+    </div>
+  </section>
+
+  <!-- Dashboard Cards -->
+  <section class="max-w-7xl mx-auto px-6 py-12">
+    <h2 class="text-3xl font-bold text-center mb-8">
+      Dashboard
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <div class="bg-white p-6 rounded-xl shadow-md text-center">
+        <h3 class="text-xl font-bold text-blue-600">Total Students</h3>
+        <p class="text-4xl font-bold mt-4">120</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow-md text-center">
+        <h3 class="text-xl font-bold text-green-600">Average Marks</h3>
+        <p class="text-4xl font-bold mt-4">78%</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow-md text-center">
+        <h3 class="text-xl font-bold text-orange-600">Attendance</h3>
+        <p class="text-4xl font-bold mt-4">89%</p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-white text-center py-6">
+    <p>© 2026 Student Management System</p>
+  </footer>
+
+</body>
+</html>
